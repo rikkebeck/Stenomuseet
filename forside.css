@@ -1,0 +1,378 @@
+body {
+    background-color: #fff8f1;
+    margin: 0;
+    overflow: hidden;
+    /* fjerner både vertikal og horisontal scroll */
+    height: 100vh;
+    /* sikrer at siden kun fylder ét viewport-højde */
+    margin: 0;
+    /* fjerner evt. margin */
+}
+
+h1 {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 120px;
+    color: #8B1639;
+    text-align: center;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px auto 0;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #8B1639;
+    text-align: center;
+    margin: 0;
+}
+
+#ikonHaandForside {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin: 0;
+}
+
+#forsideBoks {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* pat gruppe 1 */
+#gruppe1pat1-1 {
+    position: absolute;
+    width: 113.86px;
+    height: 112.46px;
+    left: 107px;
+    top: 126px;
+}
+
+#gruppe1pat7 {
+    position: absolute;
+    width: 67.66px;
+    height: 158px;
+    left: -11px;
+    top: 659px;
+}
+
+#gruppe1pat8-1 {
+    position: absolute;
+    width: 74.21px;
+    height: 71.3px;
+    left: 252px;
+    top: 193px;
+}
+
+#gruppe1pat6-1 {
+    position: absolute;
+    width: 111px;
+    height: 137.28px;
+    left: 490px;
+    top: -72px;
+}
+
+#gruppe1pat8-2 {
+    position: absolute;
+    width: 129.48px;
+    height: 124.42px;
+    left: 612px;
+    top: 123px;
+}
+
+#gruppe1pat2 {
+    position: absolute;
+    width: 201px;
+    height: 208.79px;
+    right: 400px;
+    top: 641px;
+}
+
+#gruppe1pat6-2 {
+    position: absolute;
+    width: 111px;
+    height: 137.28px;
+    right: 280px;
+    top: 146px;
+}
+
+#gruppe1pat1-2 {
+    position: absolute;
+    width: 46px;
+    height: 45.44px;
+    left: 974px;
+    top: 453px;
+}
+
+#gruppe1pat8-3 {
+    position: absolute;
+    width: 129.48px;
+    height: 124.42px;
+    right: -25px;
+    top: -47px;
+}
+
+#gruppe1pat1-3 {
+    position: absolute;
+    width: 113.86px;
+    height: 112.46px;
+    right: -10px;
+    top: 360px;
+}
+
+#gruppe1 {
+    display: none;
+}
+
+/* Pat gruppe 2 */
+#gruppe2pat5-1 {
+    position: absolute;
+    width: 62.6px;
+    height: 62.2px;
+    left: -24px;
+    top: 58px;
+}
+
+#gruppe2pat4-1 {
+    position: absolute;
+    width: 190.47px;
+    height: 191.79px;
+    left: 10.69px;
+    top: 332px;
+    transform: rotate(88.13deg);
+}
+
+#gruppe2pat1 {
+    position: absolute;
+    width: 148.83px;
+    height: 147px;
+    left: 111px;
+    top: 664px;
+}
+
+#gruppe2pat6 {
+    position: absolute;
+    width: 111px;
+    height: 137.28px;
+    left: 173px;
+    top: -30px;
+}
+
+#gruppe2pat3 {
+    position: absolute;
+    width: 151.69px;
+    height: 160.15px;
+    left: 259px;
+    top: 478px;
+}
+
+#gruppe2pat8 {
+    position: absolute;
+    width: 129.48px;
+    height: 124.42px;
+    left: 584px;
+    top: 758px;
+}
+
+#gruppe2pat5-2 {
+    position: absolute;
+    width: 140.42px;
+    height: 139.51px;
+    left: 636px;
+    top: 611px;
+}
+
+#gruppe2pat7 {
+    position: absolute;
+    width: 67.66px;
+    height: 158px;
+    right: 623px;
+    top: -79px;
+}
+
+#gruppe2pat5-3 {
+    position: absolute;
+    width: 62.6px;
+    height: 62.2px;
+    right: 480px;
+    top: 207px;
+}
+
+#gruppe2pat4-2 {
+    position: absolute;
+    width: 194.45px;
+    height: 195.81px;
+    left: 1200.7px;
+    top: 501.96px;
+    transform: rotate(91.16deg);
+}
+
+#gruppe2pat5-4 {
+    position: absolute;
+    width: 62.6px;
+    height: 62.2px;
+    left: 1186px;
+    top: 275px;
+}
+
+#gruppe2 {
+    display: none;
+}
+
+
+/* gruppe 3 */
+#gruppe3pat4-1 {
+    position: absolute;
+    width: 111px;
+    height: 111.77px;
+    left: 46px;
+    top: -17px;
+}
+
+#gruppe3pat3-1 {
+    position: absolute;
+    width: 151.69px;
+    height: 160.15px;
+    left: -16px;
+    top: 158px;
+}
+
+#gruppe3pat8-1 {
+    position: absolute;
+    width: 129.48px;
+    height: 124.42px;
+    left: 46px;
+    top: 542px;
+}
+
+#gruppe3pat5-1 {
+    position: absolute;
+    width: 122.92px;
+    height: 122.12px;
+    left: 212px;
+    top: 312px;
+}
+
+#gruppe3pat6-1 {
+    position: absolute;
+    width: 111px;
+    height: 137.28px;
+    left: 283px;
+    top: 725px;
+}
+
+#gruppe3pat7-1 {
+    position: absolute;
+    width: 67.66px;
+    height: 158px;
+    left: 340px;
+    top: 20px;
+}
+
+#gruppe3pat2-1 {
+    position: absolute;
+    width: 156.92px;
+    height: 163px;
+    left: 436px;
+    top: 97px;
+}
+
+#gruppe3pat4-2 {
+    position: absolute;
+    width: 154.22px;
+    height: 155.3px;
+    left: 413px;
+    top: 634px;
+}
+
+#gruppe3pat1 {
+    position: absolute;
+    width: 46px;
+    height: 45.44px;
+    right: 580px;
+    top: 129px;
+}
+
+#gruppe3pat3-2 {
+    position: absolute;
+    width: 151.69px;
+    height: 160.15px;
+    right: 384px;
+    top: -24px;
+}
+
+#gruppe3pat3-3 {
+    position: absolute;
+    width: 71.16px;
+    height: 71.07px;
+    right: 300px;
+    top: 312px;
+}
+
+#gruppe3pat8-2 {
+    position: absolute;
+    width: 129.48px;
+    height: 124.42px;
+    right: 280px;
+    top: 541px;
+}
+
+#gruppe3pat2-2 {
+    position: absolute;
+    width: 135.24px;
+    height: 140.49px;
+    right: 200px;
+    top: -40px;
+}
+
+#gruppe3pat7-2 {
+    position: absolute;
+    width: 97px;
+    height: 226.52px;
+    right: 180px;
+    top: 273px;
+}
+
+#gruppe3pat6-2 {
+    position: absolute;
+    width: 169px;
+    height: 209.01px;
+    right: 140px;
+    top: 698px;
+}
+
+#gruppe3pat4-3 {
+    position: absolute;
+    width: 174px;
+    height: 175.21px;
+    right: 30px;
+    top: 66px;
+}
+
+#gruppe3pat5-2 {
+    position: absolute;
+    width: 62.6px;
+    height: 62.2px;
+    right: 43px;
+    top: 734px;
+}
+
+#gruppe3 {
+    display: none;
+}
