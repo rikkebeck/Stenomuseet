@@ -13,7 +13,7 @@ h1 {
     font-family: "Gaegu", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 120px;
+    font-size: 130px;
     color: #8B1639;
     text-align: center;
     margin: 0 auto 20px;
@@ -265,7 +265,7 @@ h3 {
     position: absolute;
     width: 122.92px;
     height: 122.12px;
-    left: 212px;
+    left: 262px;
     top: 312px;
 }
 
@@ -373,6 +373,35 @@ h3 {
     top: 734px;
 }
 
+#gruppe3pat5-3 {
+    position: absolute;
+    width: 62.6px;
+    height: 62.2px;
+    left: 650px;
+    top: 40px;
+}
+
 #gruppe3 {
     display: none;
 }
+
+
+#klikbartSkærm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: block;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
