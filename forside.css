@@ -1,14 +1,4 @@
-body {
-    background-color: #fff8f1;
-    margin: 0;
-    overflow: hidden;
-    /* fjerner både vertikal og horisontal scroll */
-    height: 100vh;
-    /* sikrer at siden kun fylder ét viewport-højde */
-    margin: 0;
-    /* fjerner evt. margin */
-}
-
+/* fonte kun på forsiden */
 h1 {
     font-family: "Gaegu", sans-serif;
     font-weight: 700;
@@ -38,6 +28,7 @@ h3 {
     margin: 0;
 }
 
+/* ikon */
 #ikonHaandForside {
     width: 50px;
     display: block;
@@ -395,13 +386,3 @@ h3 {
     z-index: 9999;
     display: block;
 }
-
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-  }

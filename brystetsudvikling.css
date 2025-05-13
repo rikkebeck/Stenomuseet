@@ -1,0 +1,63 @@
+h3, h4, .navigationspile-tekst {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+font-size: 45px;
+margin-top: 20%;
+}
+
+h4 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 603px;
+}
+
+#ikkevis img {
+  color: rgba(0, 0, 0, 0);
+}
+
+img {
+  height: 100%;
+}
+
+.navigationspile-tekst {
+  font-size: 15px;
+  color: #8B1639;
+  padding: 0 40px;
+}
+
+.container-brystetsudvikling {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "tekstfelt billede"
+    "navigation billede";
+    align-items: center;
+    margin-left: 100px;
+}
+
+#tekstfelt {
+  grid-area: tekstfelt;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigationspile {
+  grid-area: navigation;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20%;
+  margin-top: -200px;
+}
+
+.billede-fase1 {
+  grid-area: billede;
+  
+}
+
+

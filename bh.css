@@ -1,0 +1,14 @@
+#rundKnap1 {
+    display: block;
+}
+
+#rundKnap2{
+    display: none;
+}
+
+#trykPaaMigKnap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

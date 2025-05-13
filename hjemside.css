@@ -1,0 +1,21 @@
+.content {
+    margin: 115px;
+}
+
+.knapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 124px;
+    align-items: center;
+}
+
+button {
+    background-color: #FFF8F1;
+    border-color: #FFF8F1;
+    border: none;
+}
+
+.knapper img {
+    width: 278px;
+    height: 261px;
+}
