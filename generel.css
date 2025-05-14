@@ -7,11 +7,12 @@ body {
 
 .skaermStoerrelse {
     width: 1280px;
-    height: auto;
+    height: 832px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 5px solid #1A1A1A;
 }
 
 main {
@@ -45,18 +46,17 @@ h3 {
 /* faste ikoner*/
 
 svg#hjemIkon {
-    position: fixed;  /* Fast position i bunden til højre */
-    top: 20px;     /* Afstand fra bunden af skærmen */
-    left: 20px;      /* Afstand fra højre side af skærmen */
-    z-index: 1000;    /* Sørger for, at det er over andre elementer */
+    position: fixed;  
+    top: 50px;
+    left: 50px;
+    z-index: 1000;
 }
 
-
 svg#speakerIkon {
-    position: fixed;  /* Fast position i bunden til højre */
-    bottom: 20px;     /* Afstand fra bunden af skærmen */
-    right: 20px;      /* Afstand fra højre side af skærmen */
-    z-index: 1000;    /* Sørger for, at det er over andre elementer */
+    position: fixed;  
+    bottom: 50px;     
+    right: 50px;      
+    z-index: 1000; 
 }
 
 #speakerIkon.clicked path {

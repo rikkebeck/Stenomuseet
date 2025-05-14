@@ -17,6 +17,7 @@ h2 {
     font-size: 30px;
     text-align: center;
     margin: 40px auto 0;
+    
 }
 
 h3 {
@@ -26,6 +27,23 @@ h3 {
     color: #8B1639;
     text-align: center;
     margin: 0;
+}
+
+
+#tekstBoks {
+     /* gør at content står i midten af skræmen uanset str. på skærm */
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+#tekstBoks img{
+    /* gør at content står i midten af skræmen uanset str. på skærm */
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ikon */
@@ -107,7 +125,7 @@ h3 {
     position: absolute;
     width: 46px;
     height: 45.44px;
-    right: 380px;
+    right: 320px;
     top: 453px;
 }
 
@@ -177,23 +195,15 @@ h3 {
     position: absolute;
     width: 129.48px;
     height: 124.42px;
-    left: 584px;
+    left: 554px;
     top: 758px;
-}
-
-#gruppe2pat5-2 {
-    position: absolute;
-    width: 140.42px;
-    height: 139.51px;
-    right: 636px;
-    top: 611px;
 }
 
 #gruppe2pat7 {
     position: absolute;
     width: 67.66px;
     height: 158px;
-    right: 623px;
+    right: 583px;
     top: -79px;
 }
 
@@ -292,14 +302,6 @@ h3 {
     top: 634px;
 }
 
-#gruppe3pat1 {
-    position: absolute;
-    width: 46px;
-    height: 45.44px;
-    right: 580px;
-    top: 129px;
-}
-
 #gruppe3pat3-2 {
     position: absolute;
     width: 151.69px;
@@ -364,14 +366,6 @@ h3 {
     top: 734px;
 }
 
-#gruppe3pat5-3 {
-    position: absolute;
-    width: 62.6px;
-    height: 62.2px;
-    left: 650px;
-    top: 40px;
-}
-
 #gruppe3 {
     display: none;
 }
@@ -386,3 +380,5 @@ h3 {
     z-index: 9999;
     display: block;
 }
+
+

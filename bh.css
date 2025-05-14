@@ -1,9 +1,6 @@
-#rundKnap1 {
-    display: block;
-}
-
-#rundKnap2{
-    display: none;
+#rundKnap {
+    transform: scale(0);
+    animation: knapVokser 2s ease-in-out forwards ; /* 2 sekunders varighed, blød start og slut, bevar slutstilstand */
 }
 
 #trykPaaMigKnap {
@@ -11,4 +8,88 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#boksMedTekstOgKnap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 85%;
+    height: auto;
+}
+
+#heleBhSiden {
+    display: flex;
+    align-items: center;    
+    max-height: 100vh;       
+    margin: 135px 0 0 115px;
+}
+
+
+@keyframes knapVokser {
+    0%   { transform: scale(0.8); opacity: 1; }
+    100% { transform: scale(1.8); opacity: 1.8; }
+}
+
+
+/* pile op og ned */
+#navigationsPile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    gap: 18em;
+    /* gør at content står i midten af skræmen uanset str. på skærm */
+    position: fixed;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.pile {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fælles styling for alle BH kasser */
+.bhKasse {
+    display: none; /* Skjules som standard */
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    /* gør at content står i midten af skræmen uanset str. på skærm */
+    position: fixed;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.kasseTekst h4 h3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.kasseTekst {
+    width: 40%;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.60);
+    margin-top: 0;
+}
+
+h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #1a1a1a;
 }

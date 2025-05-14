@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/video.css">
+    <script src="js/video.js" defer></script>
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +19,14 @@
 </head>
 
 <body>
+    <div class="skaermStoerrelse">
         <video autoplay muted>
-            <source src="video/video.mp4" type="video/mp4" id="video">
+            <source src="video/video.mp4" type="video/mp4">
         </video>
 
-        <button id="knapSkipVideo"><a href="hjemside.html">Skip video</a></button>
+        <a href="hjemside.html" id="knapSkipVideo">Skip video</a>
 
+    </div>
 </body>
 
 </html>
