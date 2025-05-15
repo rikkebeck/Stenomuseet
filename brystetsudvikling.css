@@ -1,4 +1,5 @@
-h3, h4, .navigationspile-tekst {
+/*  Styling på specifik tekst ved brystets udvikling */
+h3, h4, .navigationspileTekst {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -15,21 +16,23 @@ h4 {
   width: 603px;
 }
 
-#ikkevis img {
-  color: rgba(0, 0, 0, 0);
+/*  når pilen ikke skal vises */
+#ikkevis {
+  visibility: hidden;
 }
 
 img {
   height: 100%;
 }
 
-.navigationspile-tekst {
+.navigationspileTekst {
   font-size: 15px;
   color: #8B1639;
   padding: 0 40px;
 }
 
-.container-brystetsudvikling {
+/*  organisering af indholdet */
+.containerBrystetsudvikling {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas:
@@ -38,6 +41,7 @@ img {
     align-items: center;
     margin-left: 100px;
 }
+
 
 #tekstfelt {
   grid-area: tekstfelt;
@@ -60,4 +64,23 @@ img {
   
 }
 
+/*  styling på de to pop op beskeder på fase 5 */
+#popUpPlaceringTop {
+  position: fixed;
+  display: none;
+  z-index: 1000; 
+  width: 414px;
+  height: 91px;
+  margin-left: 30px;
+  top: 45px;
+}
 
+#popUpPlaceringBund {
+  position: fixed;
+  display: none;
+  z-index: 1000;  
+  width: 301px;
+  height: 200px;
+  right: 480px;
+  bottom: 0px;
+}

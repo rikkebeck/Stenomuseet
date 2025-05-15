@@ -1,8 +1,16 @@
+/* rød rundt knap der vokser */
 #rundKnap {
     transform: scale(0);
-    animation: knapVokser 2s ease-in-out forwards ; /* 2 sekunders varighed, blød start og slut, bevar slutstilstand */
+    animation: knapVokser 2s ease-in-out forwards ; 
 }
 
+/* animation til knap */
+@keyframes knapVokser {
+    0%   { transform: scale(0.8); opacity: 1; }
+    100% { transform: scale(1.8); opacity: 1.8; }
+}
+
+/* knap + tryk på mig tekst */
 #trykPaaMigKnap {
     display: flex;
     justify-content: center;
@@ -10,6 +18,7 @@
     flex-direction: column;
 }
 
+/* BH overskrift og underoverskrift + knap og tryk på mig tekst */
 #boksMedTekstOgKnap {
     display: flex;
     justify-content: space-between;
@@ -18,20 +27,8 @@
     height: auto;
 }
 
-#heleBhSiden {
-    display: flex;
-    align-items: center;    
-    max-height: 100vh;       
-    margin: 135px 0 0 115px;
-}
 
-
-@keyframes knapVokser {
-    0%   { transform: scale(0.8); opacity: 1; }
-    100% { transform: scale(1.8); opacity: 1.8; }
-}
-
-
+/* EFTER MAN HAR TRYKKET PÅ DEN RØDE KNAP */
 /* pile op og ned */
 #navigationsPile {
     display: none;
@@ -40,7 +37,6 @@
     flex-direction: column;
     z-index: 1000;
     gap: 18em;
-    /* gør at content står i midten af skræmen uanset str. på skærm */
     position: fixed;
     right: 50%;
     top: 50%;
@@ -56,17 +52,17 @@
 
 /* Fælles styling for alle BH kasser */
 .bhKasse {
-    display: none; /* Skjules som standard */
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
-    /* gør at content står i midten af skræmen uanset str. på skærm */
     position: fixed;
     right: 50%;
     top: 50%;
     transform: translate(50%, -50%);
 }
 
+/* bh teksterne */
 .kasseTekst h4 h3 {
     display: flex;
     flex-direction: column;

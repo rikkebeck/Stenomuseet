@@ -1,0 +1,207 @@
+/* Fade effekt */
+#fadeEffekt {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#fadeEffekt.fade-out {
+    opacity: 0;
+}
+
+
+/* OVERORDNET SIDE AF BYSTETS ANATOMI */
+
+/* Organisering af indhold */
+#containerBrystetsAnatomi {
+    position: relative;
+    text-align:right;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "billede overskrift"
+      "billede broedtekst"
+      "billede undertekst"
+      "billede knapper";
+    align-items: center;
+    margin-left: 0; /* eller fjern hvis unødvendig */
+}
+
+
+#overskriftKnapper {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    grid-area: undertekst;
+    font-size: 30px;
+    margin-right: 56px; 
+}
+
+h1 {
+    margin-right: 56px;
+    grid-area: overskrift;
+}
+
+h2 {
+    margin: 10px 56px 38px 0px;
+    grid-area: broedtekst;
+}
+
+#knapper {
+    grid-area: knapper;
+    display: flex;
+    flex-wrap: wrap;
+    width: 513px;
+
+}
+
+img {
+    grid-area: billede;
+}
+
+#anatomiTekst {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+/* knapp oppsett */
+.knapp {
+    display: flex;
+    text-decoration: none;
+    margin: 28px 56px 0px 0px;
+    width: 115px;
+    height: 115px;
+    justify-content: center;
+    align-items: center;    
+    flex-shrink: 0;
+    border-radius: 200px;
+    border: none;
+    box-shadow: 0px 9px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #fff8f1;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+#areola {
+    background: #592E18;
+}
+
+#lymfesystem {
+    background: #A1ACBB;
+}
+
+#fedtvaev {
+    background: #CEA186;
+}
+
+#maelkegange {
+    background: #8B1639;
+}
+
+#maelkekirtler {
+    background: #620E27;
+}
+
+#brystvorte {
+    background: #392318;
+}
+
+/* UNDERSIDER AF BYSTETS ANATOMI */
+
+.containerUnderEmner {
+    position: relative;
+    text-align:right;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "billede overskrift"
+      "billede broedtekst"
+      "billede knapp";
+    align-items: center;
+    margin-left: 0; /* eller fjern hvis unødvendig */
+
+}
+
+.overskriftUnderside {
+    grid-area: overskrift;
+    color: #CFA187;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px
+}
+
+.broedtekstUnderside {
+    grid-area: broedtekst;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+
+.billedeUnderside {
+    grid-area: billede;
+}
+
+.knappUnderside {
+    grid-area: knapp;
+    width: 116px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 102px;
+    background: #CFA187;
+    border: none;
+    margin-top: 65px;
+    color: #FFF8F1;
+    font-weight: bold;
+    font-family: Poppins;
+}
+.underEmnerTekst{
+    margin-top: 173px;
+    margin-right: 65px;
+}
+
+#overskriftAreola {
+    color: #392318;
+}
+#knappAreola{
+    background:#392318;
+}
+#overskrifftMaelkekirtler{
+    color: #620E27;
+}
+
+#knappMaelkekirtler{
+    background: #620E27;
+}
+
+#overskriftMaelkegange{
+color: #8B1639;
+}
+#knappMaelkegange{
+    background: #8B1639;
+}
+#overskriftlymfesystem{
+color:#A1ACBB ;
+}
+#knapplymfesystem{
+    background: #A1ACBB;
+}
+#overskriftBrystvorte{
+    color: #392318;
+}
+#knappBrystvorte{
+    background: #392318;
+}

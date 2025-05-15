@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--Link til stylesheets og javascript -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/generel.css">
-    <link rel="stylesheet" href="css/hjemside.css">
+    <link rel="stylesheet" href="css/anatomi.css">
+
+    <!-- JAVA -->
     <script src="js/generel.js" defer></script>
+    <script src="js/anatomi.js" defer></script>
+
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,46 +21,59 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Hjemside</title>
+    <title>Bryster</title>
 </head>
 
 <body>
+    
+    <!--PAK INDHOLDET IND I BESTEMT STØRRELSE-->
     <div class="skaermStoerrelse">
-        <div>
 
-            <!-- Tekst på hjemsiden-->
-            <main>
-                <h1>Vælg et emne</h1>
-                <h2>Og lær meget mere om bryster!</h2>
+        <div id="fadeEffekt">
 
-                <!-- Emne knapper -->
-                <div class="knapper">
-                    <a href="anatomiforside.html"><img src="images/hjemsideKnap1.svg" alt="Brystets anatomi"></a>
-                    <a href="bh.html"><img src="images/hjemsideKnap2.svg" alt="BH'er"></a>
-                    <a href="brystesudvikling1.html"><img src="images/hjemsideKnap3.svg" alt="Brystets Udvikling"></a>
+            <!--HJEM IKON-->
+            <a href="hjemside.html"><svg id="hjemIkon" xmlns="http://www.w3.org/2000/svg" width="80px" height="80px"
+                    viewBox="0 0 16 16">
+                    <path fill="#8B1639" fill-rule="evenodd"
+                        d="m8.36 1.37l6.36 5.8l-.71.71L13 6.964v6.526l-.5.5h-3l-.5-.5v-3.5H7v3.5l-.5.5h-3l-.5-.5V6.972L2 7.88l-.71-.71l6.35-5.8zM4 6.063v6.927h2v-3.5l.5-.5h3l.5.5v3.5h2V6.057L8 2.43z"
+                        clip-rule="evenodd" /></svg></a>
+
+
+            <div id="containerBrystetsAnatomi">
+                <img src="images/anatomiForside.svg" alt="brystets anatomi">
+
+                <div id="anatomiTekst">
+                    <h1>Brystets anatomi</h1>
+                    <h2>Bliv klogere på hvad der gemmer <br> sig inde i det kvindelige bryst. </h2>
+                    <p id="overskriftKnapper">Tryk på en knap og lær mere! </p>
+
+                    <div id="knapper">
+                        <a href="areola.html" id="areola" class="knapp">AREOLA</a>
+                        <a href="lymfesystem.html" id="lymfesystem" class="knapp">LYMFESYSTEM</a>
+                        <a href="fedtvaev.html" id="fedtvaev" class="knapp">FEDTVÆV</a>
+                        <a href="maelkegange.html" id="maelkegange" class="knapp">MÆLKEGANGE</a>
+                        <a href="maelkekirtler.html" id="maelkekirtler" class="knapp">MÆLKEKIRTLER</a>
+                        <a href="brystvorte.html" id="brystvorte" class="knapp">BRYSTVORTE</a>
+                    </div>
                 </div>
 
-            </main>
-
+            </div>
+    
             <!--SPEAKER-->
             <div class="speaker">
-                
-                <!-- lyd -->
+
                 <audio id="speakerLyd">
-                    <source src="audio/hjemside.mp3">
+                    <source src="audio/brystetsanatomi.mp3">
                 </audio>
 
-                <!-- ikon hentet fra iconify.design (de samme som i figma) -->
                 <svg id="speakerIkon" xmlns="http://www.w3.org/2000/svg" width="69px" height="69px" viewBox="0 0 24 24">
                     <path fill="#8B1639"
                         d="M15 4.25c0-1.08-1.274-1.651-2.08-.935L8.427 7.31a.75.75 0 0 1-.498.19H4.25A2.25 2.25 0 0 0 2 9.748v4.497a2.25 2.25 0 0 0 2.25 2.25h3.68a.75.75 0 0 1 .498.19l4.491 3.993c.806.717 2.081.145 2.081-.934zM9.425 8.43L13.5 4.806v14.382l-4.075-3.623a2.25 2.25 0 0 0-1.495-.569H4.25a.75.75 0 0 1-.75-.75V9.748a.75.75 0 0 1 .75-.75h3.68a2.25 2.25 0 0 0 1.495-.568m9.567-2.533a.75.75 0 0 1 1.049.156A9.96 9.96 0 0 1 22 12a9.96 9.96 0 0 1-1.96 5.947a.75.75 0 1 1-1.205-.893A8.46 8.46 0 0 0 20.5 12a8.46 8.46 0 0 0-1.665-5.053a.75.75 0 0 1 .157-1.05m-1.849 2.472a.75.75 0 0 1 1.017.302c.536.991.84 2.125.84 3.329a7 7 0 0 1-.84 3.328a.75.75 0 0 1-1.32-.714c.42-.777.66-1.667.66-2.615a5.5 5.5 0 0 0-.66-2.614a.75.75 0 0 1 .303-1.016" />
                 </svg>
 
             </div>
-
         </div>
     </div>
-
 </body>
 
 </html>

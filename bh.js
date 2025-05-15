@@ -19,10 +19,24 @@ const kasse4 = document.getElementById("bhKasse4");
 const kasse5 = document.getElementById("bhKasse5");
 const kasse6 = document.getElementById("bhKasse6");
 
+
 // Vi samler alle BH kasserne i et array for at holde styr på rækkefølgen og for at kunne skifte mellem dem
 const alleBhKasser = [kasse1, kasse2, kasse3, kasse4, kasse5, kasse6];
+
 // vi starter med kasse 1, derfor er den skiftende variabel 0 til at starte med.
-let nuvaerendeKasse = 0; 
+let nuvaerendeKasse = 0;
+
+// konstanter for lyd filerne så de passer til bh kasserne
+const lydFiler = [
+    "audio/halfcup.mp3",
+    "audio/bralette.mp3",
+    "audio/fuldskaals.mp3",
+    "audio/racerback.mp3",
+    "audio/stroploes.mp3",
+    "audio/sportsbh.mp3"
+];
+// en konstant til lyden, så vi kan tage fat i den i vores funktion og koble den sammen med arrayet
+const speakerLyd = document.getElementById("speakerLyd");
 
 
 // Vi laver eventlistener og funktion til at skjule forsiden
@@ -39,6 +53,10 @@ knap.addEventListener("click", function seBH() {
 
     // vis pile
     pile.style.display = "flex";
+
+
+    // Lyden for den første kasse
+    speakerLyd.src = lydFiler[nuvaerendeKasse];
 });
 
 
@@ -54,7 +72,7 @@ pilNed.addEventListener("click", function scrollNaeste() {
     alleBhKasser[nuvaerendeKasse].style.display = "none";
     // Opdater tilstand for nuværendeKasse, men kun hvis vi ikke er ved den sidste kasse
     if (nuvaerendeKasse < alleBhKasser.length - 1) {
-        nuvaerendeKasse++; 
+        nuvaerendeKasse++;
         //++ betyder at man husker den nuværende kasse, og gør så kassen én højere til næste gang
         // Kassen bliver vist
         alleBhKasser[nuvaerendeKasse].style.display = "flex";
@@ -65,6 +83,9 @@ pilNed.addEventListener("click", function scrollNaeste() {
         knap.style.display = "block";
         pile.style.display = "none";
     }
+    // Opdater lyden
+    speakerLyd.src = lydFiler[nuvaerendeKasse];
+
 });
 
 
@@ -85,4 +106,7 @@ pilOp.addEventListener("click", function scrollForrige() {
         knap.style.display = "block";
         pile.style.display = "none";
     }
+    // Opdater lyden
+    speakerLyd.src = lydFiler[nuvaerendeKasse];
+
 });

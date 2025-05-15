@@ -1,18 +1,9 @@
-.content {
-    margin: 115px;
-}
-
+/* emne knapperne */
 .knapper {
     display: flex;
-    justify-content: space-between;
     margin-top: 124px;
     align-items: center;
-}
-
-button {
-    background-color: #FFF8F1;
-    border-color: #FFF8F1;
-    border: none;
+    justify-content: space-between;
 }
 
 .knapper img {

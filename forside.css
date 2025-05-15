@@ -17,7 +17,7 @@ h2 {
     font-size: 30px;
     text-align: center;
     margin: 40px auto 0;
-    
+
 }
 
 h3 {
@@ -29,24 +29,22 @@ h3 {
     margin: 0;
 }
 
-
+/* tekst positioneret i midten af skærmen */
 #tekstBoks {
-     /* gør at content står i midten af skræmen uanset str. på skærm */
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#tekstBoks img{
-    /* gør at content står i midten af skræmen uanset str. på skærm */
+#tekstBoks img {
     position: absolute;
     top: 115%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* ikon */
+/* ikon på forside */
 #ikonHaandForside {
     width: 50px;
     display: block;
@@ -54,17 +52,8 @@ h3 {
     margin: 0;
 }
 
-#forsideBoks {
-    display: flex;
-    margin: auto;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-/* pat gruppe 1 */
+/* Grupper af bryster fordi de skal komme ind på forskellige tidspunkter
+/* Gruppe 1 positioner*/
 #gruppe1pat1-1 {
     position: absolute;
     width: 113.86px;
@@ -145,11 +134,12 @@ h3 {
     top: 360px;
 }
 
+/* Vi skjuler gruppe 1, fordi vi skal bruge javascript til at få vise gruppen på bestemt tidspunkt */
 #gruppe1 {
     display: none;
 }
 
-/* Pat gruppe 2 */
+/* Gruppe 1 positioner*/
 #gruppe2pat5-1 {
     position: absolute;
     width: 62.6px;
@@ -232,12 +222,12 @@ h3 {
     top: 275px;
 }
 
+/* Vi skjuler gruppe 2, fordi vi skal bruge javascript til at få vise gruppen på bestemt tidspunkt */
 #gruppe2 {
     display: none;
 }
 
-
-/* gruppe 3 */
+/* gruppe 3 positioner */
 #gruppe3pat4-1 {
     position: absolute;
     width: 111px;
@@ -366,11 +356,12 @@ h3 {
     top: 734px;
 }
 
+/* Vi skjuler gruppe 1, fordi vi skal bruge javascript til at få vise gruppen på bestemt tidspunkt */
 #gruppe3 {
     display: none;
 }
 
-
+/* Hele skærmen gøres klikbar */
 #klikbartSkærm {
     position: fixed;
     top: 0;
@@ -380,5 +371,3 @@ h3 {
     z-index: 9999;
     display: block;
 }
-
-

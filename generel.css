@@ -1,3 +1,4 @@
+/* Generel styling af body - vi gør så skærmen ikke kan scrolles på */
 body {
     background-color: #fff8f1;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     height: 100vh;
 }
 
+/* Bestemt skærmstørrelse som har synlig border og som er positioneret i midten af skærmen man sidder med*/
 .skaermStoerrelse {
     width: 1280px;
     height: 832px;
@@ -15,11 +17,14 @@ body {
     border: 5px solid #1A1A1A;
 }
 
+/* styling af main så tekst står med samme margin */
 main {
     margin-left: 115px;
     margin-top: 135px;
+    margin-right: 115px;
 }
 
+/* generelle overskifter */
 h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
@@ -44,7 +49,7 @@ h3 {
 
 
 /* faste ikoner*/
-
+/* hjemknap - øverst til venstre*/
 svg#hjemIkon {
     position: fixed;  
     top: 50px;
@@ -52,13 +57,14 @@ svg#hjemIkon {
     z-index: 1000;
 }
 
+/* speaker ikon*/
 svg#speakerIkon {
     position: fixed;  
     bottom: 50px;     
     right: 50px;      
     z-index: 1000; 
 }
-
+/* speaker ikonet ændrer farve når boksen er "checked" */
 #speakerIkon.clicked path {
     fill: #1A1A1A;
     transition: fill 0.3s ease;

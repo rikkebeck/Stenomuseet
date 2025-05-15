@@ -1,4 +1,5 @@
-let startSide = "beige"; //startsiden starter med at være beige
+//startsiden starter med at være beige
+let startSide = "beige"; 
 
 
 // FØRSTE GRUPPE BRYSTER

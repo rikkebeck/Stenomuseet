@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link til stylesheets og javascript -->
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/forside.css">
     <script src="js/forside.js" defer></script>
@@ -19,16 +20,18 @@
 </head>
 
 <body>
-
+    <!--forside -->
     <div class="skaermStoerrelse">
-        <div id="forsideBoks">
-            <div id="tekstBoks">
-            <h2>Lær mere om</h2>
-            <h1>Bryster</h1>
-            <h3>Tryk på skærmen</h3>
-            <img src="images/forsideHaand.svg" alt="Hånd ikon" id="ikonHaandForside">
-        </div>
 
+        <!--Tekst på forsiden-->
+            <div id="tekstBoks">
+                <h2>Lær mere om</h2>
+                <h1>Bryster</h1>
+                <h3>Tryk på skærmen</h3>
+                <img src="images/forsideHaand.svg" alt="Hånd ikon" id="ikonHaandForside">
+            </div>
+
+            <!-- første gruppe af bryster som skal "poppe" ind-->
             <div id="gruppe1">
                 <img src="images/pat7.svg" alt="Bryst ikon" id="gruppe1pat7">
                 <img src="images/pat1.svg" alt="Bryst ikon" id="gruppe1pat1-1">
@@ -42,7 +45,7 @@
                 <img src="images/pat1.svg" alt="Bryst ikon" id="gruppe1pat1-3">
             </div>
 
-
+            <!-- anden gruppe af bryster som skal "poppe" ind-->
             <div id="gruppe2">
                 <img src="images/pat5.svg" alt="Bryst ikon" id="gruppe2pat5-1">
                 <img src="images/pat4.svg" alt="Bryst ikon" id="gruppe2pat4-1">
@@ -56,6 +59,7 @@
                 <img src="images/pat5.svg" alt="Bryst ikon" id="gruppe2pat5-4">
             </div>
 
+            <!-- tredje gruppe af bryster som skal "poppe" ind-->
             <div id="gruppe3">
                 <img src="images/pat4.svg" alt="Bryst ikon" id="gruppe3pat4-1">
                 <img src="images/pat3.svg" alt="Bryst ikon" id="gruppe3pat3-1">
@@ -74,11 +78,9 @@
                 <img src="images/pat4.svg" alt="Bryst ikon" id="gruppe3pat4-3">
                 <img src="images/pat5.svg" alt="Bryst ikon" id="gruppe3pat5-2">
             </div>
-
-
-        </div>
     </div>
 
+    <!--hele skærmen gøres klikbar - og linker til video, som kommer frem, når man aktiverer skærmen -->
     <a href="video.html" id="klikbartSkærm"></a>
 
 
