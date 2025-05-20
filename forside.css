@@ -362,7 +362,7 @@ h3 {
 }
 
 /* Hele skærmen gøres klikbar */
-#klikbartSkærm {
+#klikbarSkærm {
     position: fixed;
     top: 0;
     left: 0;

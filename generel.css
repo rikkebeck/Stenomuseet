@@ -51,7 +51,7 @@ h3 {
 /* faste ikoner*/
 /* hjemknap - øverst til venstre*/
 svg#hjemIkon {
-    position: fixed;  
+    position: fixed;
     top: 50px;
     left: 50px;
     z-index: 1000;
@@ -59,15 +59,48 @@ svg#hjemIkon {
 
 /* speaker ikon*/
 svg#speakerIkon {
-    position: fixed;  
-    bottom: 50px;     
-    right: 50px;      
-    z-index: 1000; 
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
 }
+
 /* speaker ikonet ændrer farve når boksen er "checked" */
 #speakerIkon.clicked path {
-    fill: #1A1A1A;
+    fill: #8B1639;
     transition: fill 0.3s ease;
 }
 
 
+/* pop up som kommer frem hvis ikke man har brugt skærmen i noget tid */
+#popUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  #overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }

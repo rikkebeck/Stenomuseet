@@ -15,5 +15,5 @@ function afspilPopUp() {
   }
 }
 
-// Kalder funktionen hver 3. sekund
+// Kalder funktionen efter 3 sekunder
 setInterval(afspilPopUp, 3000);
