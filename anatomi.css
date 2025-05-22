@@ -1,11 +1,11 @@
 /* Fade effekt */
 #fadeEffekt {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 1; /* siden er synlig */
+    transition: opacity 0.5s ease-in-out; /* nÃ¥r der sker en Ã¦ndring pÃ¥ opacity, skal det ske pÃ¥ denne mÃ¥de */
 }
 
 #fadeEffekt.fade-out {
-    opacity: 0;
+    opacity: 0; /* nÃ¥r siden skal blive usynelig */
 }
 
 
@@ -24,7 +24,7 @@
       "billede undertekst"
       "billede knapper";
     align-items: center;
-    margin-left: 0; /* eller fjern hvis unødvendig */
+    margin-left: 0; /* eller fjern hvis unÃ¸dvendig */
 }
 
 
@@ -124,7 +124,7 @@ img {
       "billede broedtekst"
       "billede knapp";
     align-items: center;
-    margin-left: 0; /* eller fjern hvis unødvendig */
+    margin-left: 0; /* eller fjern hvis unÃ¸dvendig */
 
 }
 
